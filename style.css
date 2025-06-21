@@ -1,0 +1,697 @@
+@import url('https://fonts.cdnfonts.com/css/incinerator');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(151, 252, 111);
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(10, 10, 10);
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+
+}
+.main-container{
+    padding: 35px 10px 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid  rgb(125, 230, 84);;
+    border-radius: 2px;
+}
+.header-text{
+    display: flex;
+
+}
+.top-text{
+
+}
+.top-text .header-small-text{
+    color: #fff;
+    font-size: 18px;
+
+}
+.box{
+    width: 72px;
+    height: 72px;
+    background: rgb(151, 252, 111);;
+    position: relative;
+    margin-bottom: 3px;
+}
+.black-box-1{
+    width: 15px;
+    height: 45px;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+}
+.black-box-2{
+    position: absolute;
+    height: 45px;
+    width: 15px;
+    background: black;
+    bottom: 0;
+    left: 13px;
+}
+.black-box-3{
+    position: absolute;
+    height: 45px;
+    width: 15px;
+    background: black;
+    bottom: 0;
+    left: 10px;
+
+
+}
+.inside-green{
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    height: 40px;
+    width: 10px;
+    background: rgb(151, 252, 111);;
+}
+.black-box-4{
+    position: absolute;
+    height: 15px;
+    width: 8px;
+    left: 30px;
+    top: 11px;
+    background: black;
+}
+.black-box-5{
+    position: absolute;
+    height: 15px;
+    width: 8px;
+    background: black;
+    top: 11px;
+    left: 20px;
+}
+.header-text span.header-small-text{
+    color: #fff;
+    font-size: 18px;
+}
+.header-text p{
+    margin-left: 20px;
+    font-size: 45px;
+    font-weight: 600;
+}
+nav  ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    margin-top: 18px;
+}
+nav ul li a i{
+    color: #fff;
+    font-size: 30px;
+    margin: 0 20px;
+    transition: all .2s;
+}
+nav ul li a i:hover{
+    transform: scale(1.3)
+}
+.wallet-hide{
+    display: none;
+}
+
+.android-div p.android-display{
+    text-align: center;
+    font-weight: 500;
+}
+.android-div p.android-display span{
+    color: #fff;
+}
+#btn-android{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#btn-android button{
+    background: rgb(125, 230, 84);
+    color:rgb(10, 10, 10);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 5px;
+
+}
+.connect{
+    border-bottom: 4px solid rgb(151, 252, 111);;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.connect p{
+    color: #fff;
+    font-size: 15px;
+    margin-right: 10px;
+}
+.connect .connect-wallet{
+    color: #fff;
+    border: 2px solid rgb(151, 252, 111);;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.connect-hover{
+    display:inline-block;
+    color: #fff;
+    transition: transform .4s ease;
+}
+
+.connect .connect-hover:hover{
+    transform: scale(1.1);
+}
+/*------------------main text------------------*/
+.main-text{
+    padding: 30px;
+}
+.main-text .main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-content p{
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.main-content p a{
+    text-decoration:underline;
+}
+/*-------------------content-text---------*/
+
+.content-text{
+    width: 100%;
+    width: 600px;
+    background: rgba(92, 92, 92, 0.253);
+    border-radius: 10px;
+    margin-bottom: 80px;
+}
+.row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.content-container{
+    padding: 20px;
+}
+.first-text p{
+    color: #fff;
+    margin-bottom: 30px;
+}
+.first-text .txt{
+    color: rgb(151, 252, 111);;
+    display:flex;
+    justify-content: space-between;
+    font-size: 20px;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
+.checked{
+    display: block;
+}
+.spin-arrow{
+    height: 25px;
+}
+span.spin-arrow{
+    transform: rotate(180deg)
+}
+span.opposite-arrow{
+    transform: rotate(0deg)
+}
+#checked-el p a{
+    color: rgb(167, 63, 252);
+}
+
+.footer{
+    position: fixed;
+    border-top: 2px solid #ffffff0c;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    background: rgb(10, 10, 10);
+    display: flex;
+    align-items: center;
+
+}
+.footer p{
+    color: #fff;
+}
+.footer i{
+    color: #fff;
+}
+.footer-text-1{
+    height: 100%;
+    width: 153px;
+    border-right: 2px solid #ffffff1e;
+    padding: 12px 0;
+    display: flex;
+    font-size: 13px;
+    align-items:center;
+    justify-content: center;
+}
+.toggle{
+    width: 50px;
+    height: 20px;
+    border-radius: 40px;
+    margin: 0 5px ;
+    background-color: #ffffff2d;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+.circle{
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.5s ease;
+}
+.toggle.active{
+    background: rgb(179, 44, 233);
+}
+.toggle.active .circle{
+    left: 29px;
+}
+.footer .footer-text-2 , .footer .footer-text-3{
+    padding: 0 20px;
+    border-right: 2px solid #ffffff1e;
+
+}
+.footer-text-2 i ,.footer-text-3 i{
+    padding: 12px;
+    
+}
+.footer-text-2 i{
+    color:rgb(10, 10, 10);
+    height: 18px;
+    width: 18px;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+}
+body.modal-open{
+    overflow: hidden;
+}
+.modal-container{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 999;;
+
+}/* 
+.modal-center{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+} */
+.modal-content{
+    width: 100%;
+    max-width: 420px;
+    background: rgb(6, 5, 24);
+    padding: 50px 0;
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.modal-text p{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 70px;
+    font-family:'robboto',sans-serif;
+    font-weight: 600;
+    font-size: 1.4em;
+}
+.modal-text ul li{
+    padding-left: 30px;
+    line-height: 2;
+}
+.modal-text ul li:hover{
+    background: rgba(44, 44, 44, 0.164);
+}
+.times {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    background: rgba(73, 73, 73, 0.123);
+
+}
+.times span{
+    font-weight: 100;
+    border: none;
+    font-size: 1.8rem;
+    color: #85858573;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    transition: all .3s;
+}
+.times span:hover{
+    color: #fff;
+}
+.modal-text ul{
+    
+    width: 100%;
+    text-align: start;
+}
+.modal-text ul li:first-child{
+    margin-bottom: 30px;
+}
+.modal-text ul li a {
+    color: #fff;
+    font-weight: 500;
+}
+.modal-text ul li a span{
+    padding-right: 10px;
+}
+.vanish{
+    display: none;
+}
+.android-phantom{
+    position: fixed;
+    top:0;
+    left: 0;
+    background:rgba(0,0,0,0.5);
+    width:100%;
+    height: 100%;
+    display: none;
+}
+.phantom-box{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 300px;
+    background: rgb(27, 27, 27);
+    border: 2px solid rgb(125, 230, 84);
+    border-radius: 10px;
+}
+.extra-phantom{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    padding: 20px;
+}
+.phantom a button{
+    color:rgb(10, 10, 10);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+    background: rgb(125, 230, 84);
+    outline: none;
+    border: none;
+}
+.extra-phantom span{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color:#fff;
+    font-size: 2rem;
+    font-weight:200
+}
+
+/*------------------media query------------------*/
+@media(max-width: 1270px ){
+    .header-text p{
+        font-size: 35px;
+    }
+    .box{
+        width: 62px;
+        height: 62px;
+    }
+    .black-box-1{
+    width: 10px;
+    height: 35px;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+}
+.black-box-2{
+    position: absolute;
+    height: 35px;
+    width: 10px;
+    background: black;
+    bottom: 0;
+    left: 19px;
+}
+.black-box-3{
+    position: absolute;
+    height: 35px;
+    width: 10px;
+    background: black;
+    bottom: 0;
+    left: 13px;
+
+
+}
+.inside-green{
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    height: 32px;
+    width: 5px;
+    background: rgb(151, 252, 111);;
+}
+.black-box-4{
+    position: absolute;
+    height: 15px;
+    width: 8px;
+    left: 30px;
+    top: 11px;
+    background: black;
+}
+.black-box-5{
+    position: absolute;
+    height: 15px;
+    width: 8px;
+    background: black;
+    top: 11px;
+    left: 20px;
+}
+
+}
+@media(max-width: 1081px){
+    nav ul li a i{
+        padding-right: 80px;
+        
+    }
+    nav ul li a i.discord-icon{
+        padding-right: 160px;
+    }
+}
+@media(max-width: 900px){
+    .header-text p{
+        font-size: 30px;
+    }
+    .box{
+        width: 60px;
+        height: 60px;
+    }
+    .black-box-1{
+    width: 8px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 28px;
+}
+.black-box-2{
+    position: absolute;
+    height: 30px;
+    width: 8px;
+    background: black;
+    bottom: 0;
+    left: 19px;
+}
+.black-box-3{
+    position: absolute;
+    height: 30px;
+    width: 8px;
+    background: black;
+    bottom: 0;
+    left: 13px;
+
+
+}
+.inside-green{
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    height: 28px;
+    width: 4px;
+    background: rgb(151, 252, 111);;
+}
+.black-box-4{
+    position: absolute;
+    height: 12px;
+    width: 6px;
+    left: 28px;
+    top: 17px;
+    background: black;
+}
+.black-box-5{
+    position: absolute;
+    height: 12px;
+    width: 6px;
+    background: black;
+    top: 17px;
+    left: 21px;
+}
+
+}
+@media(max-width: 770px){
+    .header-text p{
+        font-size: 25px;
+    }
+}
+@media(max-width: 717px){
+    .header-text p{
+        font-size: 36px;
+    }
+    nav{
+        display: block;
+    }
+    .header-text{
+        
+        width:100%;
+    }
+    nav ul{
+        width: 100%;
+
+    }
+    nav ul li{
+        text-align: center;
+        width: 100%;
+    }
+    nav ul li a i.discord-icon{
+        padding-right: 0;
+    }
+}
+@media(max-width: 564px){
+    .connect{
+        display: block;
+    }
+    .connect-wallet{
+        margin-bottom: 5px;
+    }
+}
+@media(max-width: 516px){
+    .header-text p{
+        font-size: 30px;
+    }
+
+    .modal-content{
+        max-width: 350px;
+    }
+}
+@media(max-width: 372px){
+    .header-text p {
+        font-size: 26px;
+        margin-left: 1px;
+    }
+    .box{
+        width: 55px;
+        height: 55px;
+    }
+    .black-box-1{
+    width: 8px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+}
+.black-box-2{
+    position: absolute;
+    height: 30px;
+    width: 8px;
+    background: black;
+    bottom: 0;
+    left: 21px;
+}
+.black-box-3{
+    position: absolute;
+    height: 30px;
+    width: 8px;
+    background: black;
+    bottom: 0;
+    left: 13px;
+
+
+}
+.inside-green{
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    height: 27px;
+    width: 4px;
+    background: rgb(151, 252, 111);;
+}
+.black-box-4{
+    position: absolute;
+    height: 13px;
+    width: 6px;
+    left: 30px;
+    top: 11px;
+    background: black;
+}
+.black-box-5{
+    position: absolute;
+    height: 13px;
+    width: 6px;
+    background: black;
+    top: 11px;
+    left: 23px;
+}
+
+}

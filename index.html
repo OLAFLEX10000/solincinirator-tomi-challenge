@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sol-incinirator</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="main-container">
+        <nav>
+            <div class="header-text">
+                <div class="box">
+                    <div class="black-box-1"></div>
+                    <div class="black-box-2"></div>
+                    <div class="black-box-3">
+                        <div class="inside-green"></div>
+                    </div>
+                    <div class="black-box-4"></div>
+                    <div class="black-box-5"></div>
+                </div>
+                <div class="top-text">
+                <p>SOL-INCINIRATOR </p>
+                <p class="header-small-text">a solsugs project</p>
+            </div>
+            </div>
+            <ul>
+                <li><a href="https://discord.com/invite/solslugs"><i class="fab fa-discord discord-icon" id="icon"></i></a></li>
+                <li><a href="https://x.com/solincinerator"><i class="fab fa-twitter twitter-icon"></i></a></li>
+            </ul>
+        </nav>
+
+        <!-------------Connect wallet-->
+        <div class="connect">
+            <div class="connect-wallet" onclick="walletClick()">
+            <span class="connect-hover">Connect wallet</span>
+            </div>
+            <p> to burn unwanted NFTs or token and reclaim the rent.</p>
+        </div>
+
+        <!----------------Main text------------->
+    <main>
+        <section class="main-text">
+            <div class="main-content">
+                <div class="android-div">
+                    <p class="android-display">On mobile? You need to navigate to the uncunirator via your wallet's web browser. <br> <span>You canuse one of the deeplinks below to go there now:</span></p>
+                <div id="btn-android">
+                    <button onclick="phantomWallet()">Connect Wallet</button>
+                </div>
+                </div>
+                <p class="wallet-hide" >Connect your wallet to continue</p>
+                <p><a href="#">FAQ</a></p>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="content-text">
+            <div class="content-container">
+                <div class="first-text">
+                    <p class="txt" onclick="txtEl()">Where can I get suport?<span  class="spin-arrow arrow-el">&#x02c4</span></p>
+                    <div id="checked-el" class="hidden">
+                    <p>You can join the sol slugs discord for assitance and troubleshoothig. Use the #ceate-a-ticcket channel and the developers will assit you as soon as possible! You can find the link <a href="https://discord.com/invite/solslugs">here!</a></p>
+                </div>
+                </div>
+
+
+                <div class="first-text">
+                    <p class="txt" onclick="txtEl1()">I need you have a slidew bar in pro mode also an additional safety pop up near the end. Are these infallible?<span class="spin-arrow arrow-el-1">&#x02c4</span></p>
+                    <div id="checked-el-1" class="hidden">
+                    <p>No, and this is why the most important check is your own manual check while selecting and before approving the transaction. There are multiple opportunities to do this and this should be what you rely on the most. The safety features are meant to help make it harder to make a mistake, but are not perfect as they are pulling data from third party sources, which may fail, or the asset may be too new or obscure to have accurate data on it.</p>
+                </div>
+                </div>
+
+                <div class="first-text">
+                    <p class="txt" onclick="txtEl2()">Where is the reclaimed SOL coming from?<span class="spin-arrow arrow-el-2">&#x02c4</span></p>
+                    <div id="checked-el-2" class="hidden">
+                    <p>Any accounts on Solana require a small storage fee to open them. By burning a token, we can close this account and reclaim the storage fee.</p>
+                </div>
+                </div>
+
+                <div class="first-text">
+                    <p class="txt" onclick="txtEl3()">How much can I reclaim from burning?<span class="spin-arrow arrow-el-3">&#x02c4</span></p>
+                    <div id="checked-el-3" class="hidden">
+                    <p>Most NFTs will give you 0.01 SOL when you burn. Most tokens will give you 0.002 SOL. Certain NFTs, such as scam tokens, will also only return 0.002 SOL. If the NFT was minted with magic eden's open creator protocol, you can reclaim 0.004 SOL. Finally, compressed NFTs unfortunately cannot reclaim any SOL.</p>
+                </div>
+                </div>
+                
+                <div class="first-text">
+                    <p class="txt" onclick="txtEl4()">What does "cleanup" do <span class="spin-arrow arrow-el-4">&#x02c4</span></p>
+                    <div id="checked-el-4" class="hidden">
+                    <p>Cleanup closes vacant token accounts and unused serum accounts.
+Any NFT or unique token requires an account to store it. Whenever you list, transfer or dispose of the token or NFT, the account is left empty and can be closed to reclaim a small amount of SOL.
+Some token swaps or exchanges also require a serum account to store some swap related data. This account can be safely closed once the swap has completed to again reclaim a small amount of SOL.
+This operation is completely safe to perform. It does not have any effect on the NFTs & tokens in your wallet or limit orders on exchanges.
+In rare instances some dApps may not create token accounts as needed. This is a bug and should be reported to that dApps' developer.</p>
+                </div>
+                </div>
+
+                <div class="first-text">
+                    <p class="txt" onclick="txtEl5()">Why can't I see my wallet to connect it?<span class="spin-arrow arrow-el-5">&#x02c4</span></p>
+                    <div id="checked-el-5" class="hidden">
+                    <p>If you are on mobile, you need to open the incinerator inside your wallets browser, instead of via your regular browser.</p>
+                </div>
+                </div>
+                
+                <div class="first-text">
+                    <p class="txt" onclick="txtEl6()">Why can't I reclaim any SOL from a compressed NFT it?<span class="spin-arrow arrow-el-6">&#x02c4</span></p>
+                    <div id="checked-el-6" class="hidden">
+                    <p>To make compressed NFTs cheaper to mint, the metadata and token accounts are not stored on chain like normal.
+Instead, they are indexed off chain. While this makes them cheaper to mint, it also means there are no accounts to close on chain, and reclaim the SOL from..</p>
+                </div>
+                </div>
+                
+                <div class="first-text">
+                    <p class="txt" onclick="txtEl7()">Do you charge any fees?<span class="spin-arrow arrow-el-7">&#x02c4</span></p>
+                    <div id="checked-el-7" class="hidden">
+                    <p>Yes, we charge roughly 2-5% fees depending on the exact type of item being burnt. Cleaning up vacant accounts has a 2.3% fee, resizing NFTs has a 5% fee, burning NFTs has a 5% fee, and so on. There are no fees for burning compressed NFTs. These fees helps fund further development of the Incinerator, along with ongoing costs such as RPCs and hosting.Note: this fee is taken from the reclaimed SOL - you will never lose SOL by burning, you can only gain it.</p>
+                </div>
+                </div>
+
+                <div class="first-text">
+                    <p class="txt" onclick="txtEl8()">How can Iburn an LP (Liquidity Pool)?<span class="spin-arrow arrow-el-8">&#x02c4</span></p>
+                    <div id="checked-el-8" class="hidden">
+                    <p>Enable Pro mode in the footer to reveal the LP tab.</p>
+                </div>
+                </div>
+                
+                <div class="first-text">
+                    <p class="txt" onclick="txtEl9()">.I burned but I don't think I got anything. What's going on?<span class="spin-arrow arrow-el-9">&#x02c4</span></p>
+                    <div id="checked-el-9" class="hidden">
+                    <p>At most you are getting 0.01 SOL per NFT and 0.002 SOL for closing a token account. To reclaim 1 SOL you'd have to burn at least 100 NFTs. The transaction summary when you complete your burn should provide an accurate breakdown of the SOL you reclaimed.</p>
+                </div>
+                </div>
+                
+                <div class="first-text">
+                    <p class="txt" onclick="txtEl10()">I burned for a token (i.e. $BONK) and didn't get anything/only got SOL. What happened?<span class="spin-arrow arrow-el-10">&#x02c4</span></p>
+                    <div id="checked-el-10" class="hidden">
+                    <p>There are 2 transactions. The first is the burn that reclaims the rent in SOL. The second is a Jupiter swap of that SOL for your token of choice. Occasionally, the Jupiter swap can fail, but you would have received the SOL in your wallet. Go to the transaction on Solscan and look at the Account Inputs tab. This will show a positive change in SOL from the burn.</p>
+                </div>
+                </div>
+                
+                <div class="first-text">
+                    <p class="txt" onclick="txtEl11()">I have a stack of tokens. Can I get rich by burning 1 at a time?<span class="spin-arrow arrow-el-11">&#x02c4</span></p>
+                    <div id="checked-el-11" class="hidden">
+                    <p>The SOL you reclaim from burning is achieved by closing the account that stores that token. This amount is the same regardless of whether the account holds 1 or 100,000 tokens.Also, if you try to send 1 token at a time to a new account, this would be futile, as you'd need to pay to instantiate new token accounts, negating any profit you'd make.</p>
+                </div>
+                </div>
+                
+                <div class="first-text">
+                    <p class="txt" onclick="txtEl12()">What does "frozen" mean?<span class="spin-arrow arrow-el-12">&#x02c4</span></p>
+                    <div id="checked-el-12" class="hidden">
+                    <p>A frozen token cannot be transferred or burned. We indicate a frozen token so there is no confusion when you are unable to select it for burning.Our dev has posted about this issue on Solana's Github in hopes that they make a change, but as of now we are stuck with these frozen tokens.</p>
+                </div>
+                </div>
+                <div class="first-text">
+                    <p class="txt" onclick="txtEl13()">SOL Incininerator Tutorial<span class="spin-arrow arrow-el-13">&#x02c4</span></p>
+                    <div id="checked-el-13" class="hidden">
+                    <p>You can find a tutorial on using the SOL Incinerator on our Youtube channel <a href="https://discord.com/invite/solslugs">here!</a></p>
+                </div>
+                </div>
+
+                <div class="first-text">
+                    <p class="txt" onclick="txtEl14()">Who made the SOL Incinerator?<span class="spin-arrow arrow-el-14">&#x02c4</span></p>
+                    <div id="checked-el-14" class="hidden">
+                    <p>The incinerator was made by the Sol Slugs team, a deflationary collection centered around burning.You can find more info on Sol Slugs by visiting our Discord or Twitter in the links above!</p>
+                </div>
+                </div>
+
+                </div>
+            </div>
+        </section>
+        
+    </main>
+        </div>
+        
+
+        <footer>
+            <div class="footer">
+                <div class="footer-text-1">
+                    <div class="footer-slide">
+                        <p>Lite</p>
+                    </div>
+                    <div class="toggle" id="toggle" onclick="toggleSwitch()" >
+                        <div class="circle"></div>
+                    </div>
+                    <div class="footer-slide">
+                        <p>Pro</p>
+                    </div>
+                </div>
+
+                <div class="footer-text-2">
+                    <i class="fa-solid fa-question"></i>
+                </div>
+                <div class="footer-text-3">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+            </div>
+        </footer>
+
+    <div class="modal-container" id="modal-container">
+        <div class="modal-center">
+        <div class="modal-content" id="modal-content">
+            <div class="modal-text">
+                <div class="times" onclick="closeModal()">
+                            <span>&times;</span>
+                        </div>
+                    <p>Connect a wallet on <br> solana to continue</p>
+                    <ul>
+                        <li><a href="#"><span class="sol">🔥</span>Solfare</a></li>
+                        <li><a href="#"><span class="sol">🌌</span>Coinbase Wallet</a></li>
+                    </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="android-phantom" id="android-phantom">
+        <div class="phantom-box">
+            <div class="extra-phantom">
+                <span onclick="cancelPhantom()">&times;</span>
+            <div class="phantom">
+                <a href="#"><button>PHANTOM</button></a>
+            </div>
+            <div class="phantom">
+                <a href="#"><button>SOLFLARE</button></a>
+            </div>
+
+            <div class="phantom">
+                <a href="#"><button>BACKPACK</button></a>
+            </div>
+
+            <div class="phantom">
+                <a href="#"><button>COINBASE</button></a>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
